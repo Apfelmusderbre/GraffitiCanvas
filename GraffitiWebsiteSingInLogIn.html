@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanCanvasExpressions.com</title>
+    <style>
+       
+   body {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+       
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+
+
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center; /* Center items vertically in the flex container */
+        }
+
+        nav img {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 10px;
+            display: block;
+        }
+
+        nav ul li:hover {
+            background-color: #555;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            border-radius: 0 0 4px 4px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul li:hover > ul {
+            display: inherit;
+        }
+
+        nav ul ul li {
+            width: 200px;
+            float: none;
+            display: list-item;
+            position: relative;
+        }
+
+        nav ul ul ul li {
+            position: relative;
+            top: -60px;
+            left: 200px;
+        }
+
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+nav ul ul li:hover {
+    background-color: #555;
+}
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
+
+
+
+/* Dropdown style */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    background-color: #333;
+    display: block;
+}
+
+nav > ul > li:hover {
+    background-color: #555;
+}
+
+
+
+
+
+
+        
+footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto; /*Footer am ende*/
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+   footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo img {
+    width: 100px; /* Logo Größe */
+  }
+
+  .footer-info {
+    flex: 1;
+    margin: 0 20px;
+  }
+
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+
+  .social-icons li {
+    margin-right: 10px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+
+
+
+
+
+
+
+
+
+.form-container {
+            text-align: center;
+        }
+
+        form {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+<nav>
+    <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
+    <ul>
+        <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
+            <ul>
+                <li><a href="#section1">Legal</a></li>
+                <li><a href="#section2">Non Legal</a></li>
+                <li>
+                    <a href="#section3">Streetart</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
+            <ul>
+                <li><a href="#section1">TAG</a></li>
+                <li><a href="#section2">ALPHABET</a></li>
+                <li><a href="#section3">CANS</a></li>
+            </ul>
+        </li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
+        <li class="dropdown">
+            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
+            
+        </li>
+    </ul>
+</nav>
+
+
+<!TExt>
+
+  <div class="container">
+        <h1>Be One withe us</h1>
+        <p>Hey there, urban art enthusiast! Are you ready to unleash your creativity and dive into a world where every wall is a canvas waiting to be transformed?</p>
+
+        <h2>Why join us? Here are some exclusive benefits:</h2>
+        <ul>
+            <li>Showcase Your Talent: Display your artwork in our virtual gallery and get recognized by a community that truly appreciates the art of graffiti.</li>
+            <li>Connect with Like-Minded Artists: Network with fellow artists, exchange ideas, and collaborate on projects that push the boundaries of urban creativity.</li>
+            <li>Global Community: Join a diverse community that spans across borders, bringing together artists from different cultures and backgrounds, enriching your artistic journey.</li>
+            <li>Challenges and Competitions: Participate in exciting challenges and competitions to test your skills, win cool prizes, and earn recognition as a top-tier graffiti artist.</li>
+            <li>Learn and Grow: Access exclusive tutorials, tips, and resources to hone your craft and take your graffiti skills to the next level.</li>
+            <li>Engage in Discussions: Dive into discussions about the latest trends, techniques, and hotspots in the graffiti world. Your voice matters, and we want to hear it!</li>
+            <li>Express Yourself: This is your space to express, inspire, and be inspired. Share your passion for graffiti without limits.</li>
+        </ul>
+
+        
+        <a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Explore Our Community</a>
+
+        <p>See you on the colorful side of life!<br>The Your Graffiti Community Team </p>
+    </div>
+
+<!Kasten Für Log in /Sing Up--------- >
+ <div class="form-container">
+        <div class="welcome-text">
+            
+        </div>
+
+        <form action="login.php" method="post">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Log In</button>
+        </form>
+
+        <p>Don't have an account? <a href="#signup">Sign Up</a></p>
+
+        <form id="signup" action="signup.php" method="post">
+            <h2>Sign Up</h2>
+            <label for="newUsername">Username:</label>
+            <input type="text" id="newUsername" name="newUsername" required>
+
+            <label for="newPassword">Password:</label>
+            <input type="password" id="newPassword" name="newPassword" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+<! Schwarze teil am ende--->
+<footer>
+  <div class="footer-container">
+    <div class="footer-logo">
+      <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Your Logo">
+    </div>
+    <div class="footer-info">
+      <p>Explore the vibrant world of graffiti art.</p>
+      <p>Connect with us:</p>
+     
+    </div>
+    <div class="footer-links">
+      <ul>
+            
+              <li> <a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteArtists.html">Artists</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Community</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>

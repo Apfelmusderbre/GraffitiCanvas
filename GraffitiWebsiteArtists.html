@@ -5,17 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanCanvasExpressions.com</title>
     <style>
-       
-body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-
-body {
-            font-family: Arial, sans-serif;
+        body {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
             margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
         }
 
         nav {
@@ -23,7 +18,7 @@ body {
             color: #fff;
             padding: 10px;
             display: flex;
-            align-items: center; /* Center items vertically in the flex container */
+            align-items: center;
         }
 
         nav img {
@@ -81,219 +76,248 @@ body {
             left: 200px;
         }
 
-        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            margin-top: auto;
+        }
 
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-   footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
+        .footer-logo img {
+            width: 100px;
+        }
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+        .footer-info {
+            flex: 1;
+            margin: 0 20px;
+        }
 
-  .footer-logo img {
-    width: 100px; /* Adjust the size of your logo */
-  }
+        .social-icons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
 
-  .footer-info {
-    flex: 1;
-    margin: 0 20px;
-  }
+        .social-icons li {
+            margin-right: 10px;
+        }
 
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
+        .social-icons a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+        }
 
-  .social-icons li {
-    margin-right: 10px;
-  }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
 
-  .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-  }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
 
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-  .footer-links li {
-    margin-bottom: 8px;
-  }
+        .footer-copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
 
-  .footer-copyright {
-    text-align: center;
-    margin-top: 20px;
-  }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
 
+        th {
+            background-color: #f2f2f2;
+        }
 
-
-
-
-
- table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: left;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-
+         section {
+            height: 90px; /* Reduced height for better visibility */
+            display: flex;
+            margin-bottom: 20px; /* Adjust this value to control the space between sections */
+        }
 
 
 
- section {
-      height: 500px;
-      display: flex;
-      align-items: center;
-      background-color: #f0f0f0;
-    }
+        hr {
+            border: 1px solid #dde; /* Define the border color and style */
+            margin: 20px 0; /* Adjust the margin to control spacing */
+        }
 
-
-
-
-
-
-
-
+h2 {
+            
+            margin-bottom: 2px; /* Adjusted margin */
+        }
 
 
     </style>
+
 </head>
 <body>
 
-
-
-
 <nav>
-        <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
-        <ul>
-            <li><a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-            <li><a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteGallery.html">Gallery</a></li>
-            <li>
-               <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
-                <ul>
-                    <li><a href="#section1">Legal</a></li>
-                    <li><a href="#section2">Non Legal</a></li>
-                    <li>
-                        <a href="#section3">Streetart</a>
-                        <ul>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
-                <ul>
-                    <li><a href="#section1">TAG</a></li>
-                    <li><a href="#section2">ALPHABET</a></li>
-                    <li><a href="#section3">CANS</a></li>
-                </ul>
-            </li>
-            <li><a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
-            <li><a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Contact</a></li>
-        </ul>
-    </nav>
+    <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
+    <ul>
+        <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
+            <ul>
+                <li><a href="#section1">Legal</a></li>
+                <li><a href="#section2">Non Legal</a></li>
+                <li>
+                    <a href="#section3">Streetart</a>
+                    <ul>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
+            </ul>
+        </li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a></li>
+    </ul>
+</nav>
 
 
-<section id="section1">
-    <p>Legal Artists</p>
-  </section>
+    <h1>Legal Artists:</h1>
+    <p>
+        Legal artists are individuals who create graffiti or street art with the permission of property owners or relevant authorities.
+        Their work is sanctioned and aligns with local regulations, fostering a positive relationship between artists and the community.
+        Legal artists often collaborate with businesses, municipalities, or property owners to beautify public spaces.
+    </p>
 
-  <section id="section2">
-    <p>Non Legal Artists</p>
-  </section>
+   <h2>Blade (Steven Ogburn)</h2>
+    <p>Blade is a legendary graffiti artist known for his involvement in the New York City graffiti scene during the 1970s and 1980s. He is recognized for his mastery of traditional graffiti styles and vibrant colors.</p>
+<img src="https://d16kd6gzalkogb.cloudfront.net/artist_images/Blade-profile.jpg" alt="Blade Image">
+
+
+    <h2>Futura 2000 (Leonard Hilton McGurr)</h2>
+    <p>Futura 2000 is an American graffiti artist who emerged in the early 1970s. He is known for his abstract, futuristic style that has influenced both graffiti and contemporary art. Futura 2000 has successfully transitioned from the streets to galleries.</p>
+
+    <h2>Daze (Chris Ellis)</h2>
+    <p>Daze is a New York-based artist who gained prominence in the 1970s for his graffiti work on subway trains. He is known for his letter-based style and has also exhibited in galleries around the world.</p>
+
+    <h2>Lady Pink (Sandra Fabara)</h2>
+    <p>Lady Pink is a pioneer in the world of graffiti art and one of the few prominent female graffiti artists. She has been active since the 1970s and is known for her intricate lettering and colorful murals.</p>
+
+    <h2>SEEN (Richard Mirando)</h2>
+    <p>SEEN is a Bronx-born graffiti artist who began his career in the early 1970s. He is recognized for his distinctive lettering style and has played a significant role in the evolution of graffiti as an art form.</p>
+
+    <h2>Revok (Jason Williams)</h2>
+    <p>Revok is a contemporary graffiti artist known for his involvement in both legal and illegal graffiti. His work often combines traditional letter-based elements with abstract and geometric forms.</p>
+
+    <h2>Tats Cru</h2>
+    <p>Tats Cru is a group of Bronx-based graffiti artists, including Bio, BG183, and Nicer. They are known for their collaborative murals and traditional graffiti styles that incorporate vibrant colors and intricate lettering.</p>
+
+    <h2>POSE (Jordan Nickel)</h2>
+    <p>Pose is a contemporary artist known for his transition from illegal graffiti to legal mural work. His letter-based style often includes bold colors and dynamic compositions.</p>
+
+<hr>
+
+
+</section>
+<section id="section2">
+      <h2>Illegal Artists:</h2>
+    <p>
+        Illegal artists, also known as taggers or vandals, engage in graffiti without proper authorization or consent.
+        Their activities may violate local laws and regulations, leading to legal consequences.
+        While some illegal artists may express themselves as a form of protest or rebellion, their actions can contribute to negative perceptions of graffiti as a whole.
+    </p>
+
+</section>
+
+<hr>
 
 <section id="section3">
-    <p>Streetart Artists</p>
-  </section>
+    <h2>Street Art Artists:</h2>
+    <p>
+        Street art artists encompass a broad spectrum, including legal and illegal practitioners, who use public spaces as their canvas.
+        Street art often transcends traditional graffiti, incorporating various styles and mediums such as stencils, murals, and installations.
+        Street art is a dynamic and evolving form of artistic expression that can convey social, political, or cultural messages.
+    </p>
+</section> 
 
+<hr>
 
+<p>Whether you're a Legal Artist, an enthusiast of underground expressions, or a Street Art connoisseur, we invite you to be part of our dynamic artist community. Embrace the diversity of urban art and join us in celebrating the boundless creativity that transforms the ordinary into the extraordinary.</p>
 
-  <table>
+<table>
     <thead>
-      <tr>
-        <th>Tag</th>
-        <th>Country</th>
-        <th>Social media</th>
-      </tr>
+        <tr>
+            <th>Tag</th>
+            <th>Country</th>
+            <th>Social media</th>
+        </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>Wekman</td>
-        <td>Russia</td>
-        <td>TAGMASCHIEN</td>
-      </tr>
-      <tr>
-        <td>Resk12</td>
-        <td>Spain</td>
-        <td>RESK12</td>
-      </tr>
-     
+        <tr>
+            <td>Wekman</td>
+            <td>Russia</td>
+            <td><a href="#" target="_blank">TAGMASCHIEN</a></td>
+        </tr>
+        <tr>
+            <td>Resk12</td>
+            <td>Spain</td>
+            <td><a href="#" target="_blank">RESK12</a></td>
+        </tr>
     </tbody>
-  </table>
-
-
-
-
-
-
-
-
-
-
-
+</table>
 
 <footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Your Logo">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Your Logo">
+        </div>
+        <div class="footer-info">
+            <p>Explore the vibrant world of graffiti art.</p>
+            <p>Connect with us:</p>
+            <ul class="social-icons">
+                <li><a href="#" target="_blank">Facebook</a></li>
+                <li><a href="#" target="_blank">Twitter</a></li>
+                <li><a href="#" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html">Artists</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Community</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="footer-info">
-      <p>Explore the vibrant world of graffiti art.</p>
-      <p>Connect with us:</p>
-     
+    <div class="footer-copyright">
+        <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
     </div>
-    <div class="footer-links">
-      <ul>
-              <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-        <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteGallery.html">Gallery</a></li>
-        <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteArtists.html">Artists</a></li>
-        <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
-        <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteCommunity.html">Community</a></li>
-        <li> <a href="file:///G:/Thooooooooooooomas/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
-  </div>
 </footer>
-
-
 
 </body>
 </html>
