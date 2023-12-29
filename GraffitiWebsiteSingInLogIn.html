@@ -13,25 +13,13 @@
             min-height: 100vh;
             margin: 0;
         }
-       
-
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-
-
-
 
         nav {
             background-color: #333;
             color: #fff;
             padding: 10px;
             display: flex;
-            align-items: center; /* Center items vertically in the flex container */
+            align-items: center;
         }
 
         nav img {
@@ -89,74 +77,11 @@ body {
             left: 200px;
         }
 
-
-nav ul ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #333;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-}
-
-nav ul li:hover > ul {
-    display: inherit;
-}
-
-nav ul ul li {
-    width: 200px;
-    float: none;
-    display: list-item;
-    position: relative;
-}
-
-nav ul ul li:hover {
-    background-color: #555;
-}
-
-nav ul ul ul li {
-    position: relative;
-    top: -60px;
-    left: 200px;
-}
-
-
-
-/* Dropdown style */
-.dropdown {
-    position: relative;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    min-width: 160px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    background-color: #333;
-    display: block;
-}
-
-nav > ul > li:hover {
-    background-color: #555;
-}
-
-
-
-
-
-
-        
-footer {
+        footer {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            margin-top: auto; /*Footer am ende*/
+            margin-top: auto;
         }
 
         .footer-container {
@@ -165,72 +90,35 @@ footer {
             align-items: center;
         }
 
-   footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
+        .footer-logo img {
+            width: 100px;
+        }
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+        .footer-info {
+            flex: 1;
+            margin: 0 20px;
+        }
 
-  .footer-logo img {
-    width: 100px; /* Logo Größe */
-  }
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
 
-  .footer-info {
-    flex: 1;
-    margin: 0 20px;
-  }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
 
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-  .social-icons li {
-    margin-right: 10px;
-  }
+        .footer-copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-  .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .footer-links li {
-    margin-bottom: 8px;
-  }
-
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .footer-copyright {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-.form-container {
+        .form-container {
             text-align: center;
         }
 
@@ -266,9 +154,12 @@ footer {
             background-color: #555;
         }
 
-
-
-
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
 
     </style>
 </head>
@@ -283,26 +174,31 @@ footer {
         <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
         <li>
             <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
-            <ul>
-                <li><a href="#section1">Legal</a></li>
-                <li><a href="#section2">Non Legal</a></li>
-                <li>
-                    <a href="#section3">Streetart</a>
+            <ul><li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section1">Legal</a></li>
+                    <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section2">Non Legal</a></li>
+                    <li>
+                        <a href="file:///H:/Code/GraffitiWebsiteArtists.html#section3">Streetart</a>
+                <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section4">Connect with others</a>
                 </li>
             </ul>
         </li>
         <li>
             <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
             <ul>
-                <li><a href="#section1">TAG</a></li>
-                <li><a href="#section2">ALPHABET</a></li>
-                <li><a href="#section3">CANS</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
             </ul>
         </li>
         <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
-        <li class="dropdown">
-            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
+        <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+        <li>
             
+            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html">Log In</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup">Sign Up</a></li>
+            </ul>
         </li>
     </ul>
 </nav>

@@ -5,23 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanCanvasExpressions.com</title>
     <style>
-       
-     
-   body {
+        body {
             font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
             margin: 0;
         }
-       
 
         nav {
             background-color: #333;
             color: #fff;
             padding: 10px;
             display: flex;
-            align-items: center; /* Center items vertically in the flex container */
+            align-items: center;
         }
 
         nav img {
@@ -73,18 +70,21 @@
             position: relative;
         }
 
+        nav ul ul li:hover {
+            background-color: #555;
+        }
+
         nav ul ul ul li {
             position: relative;
             top: -60px;
             left: 200px;
         }
 
-        
-footer {
+        footer {
             background-color: #333;
             color: #fff;
             padding: 20px 0;
-            margin-top: auto; /* This ensures the footer stays at the bottom */
+            margin-top: auto;
         }
 
         .footer-container {
@@ -93,82 +93,41 @@ footer {
             align-items: center;
         }
 
-   footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-  }
+        .footer-logo img {
+            width: 100px;
+        }
 
-  .footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+        .footer-info {
+            flex: 1;
+            margin: 0 20px;
+        }
 
-  .footer-logo img {
-    width: 100px; /* Adjust the size of your logo */
-  }
+        .social-icons, .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
 
-  .footer-info {
-    flex: 1;
-    margin: 0 20px;
-  }
+        .social-icons li {
+            margin-right: 10px;
+        }
 
-  .social-icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-  }
+        .social-icons a, .footer-links a {
+            color: #fff;
+            text-decoration: none;
+        }
 
-  .social-icons li {
-    margin-right: 10px;
-  }
+        .social-icons a {
+            font-size: 20px;
+        }
 
-  .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-  }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
 
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .footer-links li {
-    margin-bottom: 8px;
-  }
-
-  .footer-links a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  .footer-copyright {
-    text-align: center;
-    margin-top: 20px;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        .footer-copyright {
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -177,36 +136,40 @@ footer {
 
 
 <nav>
-         
-        <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
-        <ul>
-            <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
-            <li>
-               <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
-                <ul>
-                    <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section1">Legal</a></li>
+    <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
+    <ul>
+        <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
+            <ul><li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section1">Legal</a></li>
                     <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section2">Non Legal</a></li>
                     <li>
                         <a href="file:///H:/Code/GraffitiWebsiteArtists.html#section3">Streetart</a>
-                        <ul>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
-                <ul>
-                    <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
-                    <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
-                    <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
-                </ul>
-            </li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
-         <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a></li>
-       </ul>
-    </nav>
+                <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section4">Connect with others</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
+            </ul>
+        </li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+        <li>
+            
+            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html">Log In</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup">Sign Up</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
 
 
