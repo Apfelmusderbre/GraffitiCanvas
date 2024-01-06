@@ -3,160 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrbanCanvasExpressions.com</title>
+    <title>WirverkaufenKeanu.Hub</title>
     <style>
        
+        /* Styling für den gesamten Seiteninhalt */
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* Setzt die bevorzugte Schriftart für den Body */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* Verwendet Flexbox für eine vertikale Anordnung des Inhalts */
+    display: flex;
+    flex-direction: column;
+    /* Definiert minimale Höhe und entfernt den Seitenrand */
+    min-height: 100vh;
+    margin: 0;
 }
 
+        /* Styling für die Navigationsleiste */
+nav {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* Verwendet Flexbox für die horizontale Anordnung der Navigationsleisteninhalte */
+    display: flex;
+    align-items: center;
+}
 
-body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+        /* Styling für das Logo in der Navigationsleiste */
+nav img {
+    /* Setzt maximale Höhe und rechten Seitenabstand für das Logo */
+    max-height: 40px;
+    margin-right: 10px;
+}
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            align-items: center; /* Center items vertically in the flex container */
-        }
+        /* Styling für die Listen in der Navigationsleiste */
+nav ul {
+    /* Entfernt Listendarstellung, Abstände und verwendet Flexbox */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        nav img {
-            max-height: 40px;
-            margin-right: 10px;
-        }
+        /* Styling für Listenelemente in der Navigationsleiste */
+nav ul li {
+    /* Setzt rechten Abstand und definiert relative Position */
+    margin-right: 20px;
+    position: relative;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+        /* Styling für Links in der Navigationsleiste */
+nav ul li a {
+    /* Entfernt Unterstreichung, setzt Textfarbe, Padding und Blockdarstellung */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
 
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-        }
+        /* Hover-Effekt für Listenelemente in der Navigationsleiste */
+nav ul li:hover {
+    background-color: #555;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px;
-            display: block;
-        }
+/* Styling für Untermenüs in der Navigationsleiste */
+nav ul ul {
+    /* Verbirgt Untermenüs, setzt absolute Position, Hintergrundfarbe und Schatten */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
 
-        nav ul li:hover {
-            background-color: #555;
-        }
+        /* Zeigt Untermenüs bei Hover an */
+nav ul li:hover > ul {
+    display: inherit;
+}
 
-        nav ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            border-radius: 0 0 4px 4px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        }
+        /* Styling für Untermenü-Listenelemente in der Navigationsleiste */
+nav ul ul li {
+    /* Setzt Breite, hebt Float auf, definiert relative Position */
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
 
-        nav ul li:hover > ul {
-            display: inherit;
-        }
+        /* Styling für verschachtelte Untermenüs in der Navigationsleiste */
+nav ul ul ul li {
+    /* Definiert relative Position und Positionswerte für verschachtelte Untermenüs */
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
 
-        nav ul ul li {
-            width: 200px;
-            float: none;
-            display: list-item;
-            position: relative;
-        }
-
-        nav ul ul ul li {
-            position: relative;
-            top: -60px;
-            left: 200px;
-        }
-
-        
-
-
-   footer {
+        /* Styling für den Footer */
+footer {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
     background-color: #333;
     color: #fff;
     padding: 20px 0;
-  }
+    margin-top: auto;
+}
 
-  .footer-container {
+        /* Styling für den Footer-Container */
+.footer-container {
+    /* Verwendet Flexbox für die horizontale Anordnung und Ausrichtung der Footer-Elemente */
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
-  .footer-logo img {
-    width: 100px; /* Adjust the size of your logo */
-  }
+        /* Styling für das Logo im Footer */
+.footer-logo img {
+    /* Setzt maximale Breite für das Logo */
+    width: 100px;
+}
 
-  .footer-info {
+        /* Styling für Informationen im Footer */
+.footer-info {
+    /* Definiert Flex-Wachstumsverhalten und Seitenabstand */
     flex: 1;
     margin: 0 20px;
-  }
+}
 
-  .social-icons {
+        /* Styling für Links im Footer */
+.footer-links ul {
+    /* Entfernt Listendarstellung und Abstände */
     list-style: none;
     padding: 0;
-    display: flex;
-  }
+}
 
-  .social-icons li {
-    margin-right: 10px;
-  }
-
-  .social-icons a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 20px;
-  }
-
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .footer-links li {
+        /* Styling für Listenelemente im Footer */
+.footer-links li {
+    /* Setzt unteren Abstand zwischen Listenelementen */
     margin-bottom: 8px;
-  }
+}
 
-  .footer-links a {
+        /* Styling für Links in Listenelementen im Footer */
+.footer-links a {
+    /* Setzt Textfarbe und entfernt Unterstreichung */
     color: #fff;
     text-decoration: none;
-  }
+}
 
-  .footer-copyright {
+        /* Styling für Copyright-Text im Footer */
+.footer-copyright {
+    /* Zentriert den Text und setzt oberen Abstand */
     text-align: center;
     margin-top: 20px;
-  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        /* Styling für Bilder */
+img {
+    /* Setzt maximale Breite, automatische Höhe, abgerundete Ecken und unteren Abstand für Bilder */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
     </style>
 </head>
 <body>
@@ -165,65 +173,71 @@ body {
 
 
 <nav>
-       
-        <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
-        <ul>
-            <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
-            <li>
-               <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
-                <ul>
-                    <li><a href="#section1">Legal</a></li>
-                    <li><a href="#section2">Non Legal</a></li>
+    <img src="file:///H:/IMG_4390.webp" alt="Beschreibung des Bildes">
+    <ul>
+        <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Keanus Fuß</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Keanus Fuß</a></li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Keanus Fuß</a>
+            <ul><li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section1">Keanus Fuß</a></li>
+                    <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section2"Keanus Fuß</a></li>
                     <li>
-                        <a href="#section3">Streetart</a>
-                        <ul>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
-                <ul>
-                    <li><a href="#section1">TAG</a></li>
-                    <li><a href="#section2">ALPHABET</a></li>
-                    <li><a href="#section3">CANS</a></li>
-                </ul>
-            </li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
-            <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
-            <li><a href="#" class="cool-button">Log In / Sign Up</a></li>
-        </ul>
-    </nav>
+                        <a href="file:///H:/Code/GraffitiWebsiteArtists.html#section3">Keanus Fuß</a>
+                <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section4">Keanus Fuß</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Keanus Fuß</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">Keanus Fuß</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">Keanus Fuß</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">Keanus Fuß</a></li>
+            </ul>
+        </li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Keanus Fuß</a></li>
+        <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Keanus Fuß</a></li>
+        <li>
+            
+            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Keanus Fuß</a>
+            <ul>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html">Keanus Fuß​1</a></li>
+                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup">Keanus Fuß​2</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
 
+
+  <img src="file:///H:/IMG_4390.webp" alt="Beschreibung des Bildes">
+  
 
 <footer>
   <div class="footer-container">
     <div class="footer-logo">
-      <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Your Logo">
+      <img src="file:///H:/IMG_4390.webp" alt="Beschreibung des Bildes">
     </div>
     <div class="footer-info">
-      <p>Explore the vibrant world of graffiti art.</p>
-      <p>Connect with us:</p>
+      <p>Kauft den wertlosen keanu</p>
+      <p>Connect with us to buy Keanus Fuß:</p>
      
     </div>
     <div class="footer-links">
       <ul>
-        
-              <li> <a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteArtists.html">Artists</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Community</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
+              
+              <li> <a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Keanus Fuß</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteGallery.html">Keanus Fuß</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteArtists.html">Keanus Fuß</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html">Keanus Fuß</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Keanus Fuß</a></li>
+        <li> <a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Keanus Fuß</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-copyright">
-    <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
+    <p>&copy; Wir verkauen keanu</p>
   </div>
 </footer>
-
 
 
 </body>

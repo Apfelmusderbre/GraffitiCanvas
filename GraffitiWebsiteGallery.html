@@ -7,124 +7,165 @@
     <style>
        
      
-   body {
-            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
+        /* Styling für den gesamten Seiteninhalt */
+body {
+    /* Setzt die bevorzugte Schriftart für den Body */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* Verwendet Flexbox für eine vertikale Anordnung des Inhalts */
+    display: flex;
+    flex-direction: column;
+    /* Definiert minimale Höhe und entfernt den Seitenrand */
+    min-height: 100vh;
+    margin: 0;
+}
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
+        /* Styling für die Navigationsleiste */
+nav {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* Verwendet Flexbox für die horizontale Anordnung der Navigationsleisteninhalte */
+    display: flex;
+    align-items: center;
+}
 
-        nav img {
-            max-height: 40px;
-            margin-right: 10px;
-        }
+        /* Styling für das Logo in der Navigationsleiste */
+nav img {
+    /* Setzt maximale Höhe und rechten Seitenabstand für das Logo */
+    max-height: 40px;
+    margin-right: 10px;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+        /* Styling für die Listen in der Navigationsleiste */
+nav ul {
+    /* Entfernt Listendarstellung, Abstände und verwendet Flexbox */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-        }
+        /* Styling für Listenelemente in der Navigationsleiste */
+nav ul li {
+    /* Setzt rechten Abstand und definiert relative Position */
+    margin-right: 20px;
+    position: relative;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px;
-            display: block;
-        }
+        /* Styling für Links in der Navigationsleiste */
+nav ul li a {
+    /* Entfernt Unterstreichung, setzt Textfarbe, Padding und Blockdarstellung */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
 
-        nav ul li:hover {
-            background-color: #555;
-        }
+        /* Hover-Effekt für Listenelemente in der Navigationsleiste */
+nav ul li:hover {
+    background-color: #555;
+}
 
-        nav ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            border-radius: 0 0 4px 4px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        }
+        /* Styling für Untermenüs in der Navigationsleiste */
+nav ul ul {
+    /* Verbirgt Untermenüs, setzt absolute Position, Hintergrundfarbe und Schatten */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
 
-        nav ul li:hover > ul {
-            display: inherit;
-        }
+        /* Zeigt Untermenüs bei Hover an */
+nav ul li:hover > ul {
+    display: inherit;
+}
 
-        nav ul ul li {
-            width: 200px;
-            float: none;
-            display: list-item;
-            position: relative;
-        }
+        /* Styling für Untermenü-Listenelemente in der Navigationsleiste */
+nav ul ul li {
+    /* Setzt Breite, hebt Float auf, definiert relative Position */
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
 
-        nav ul ul ul li {
-            position: relative;
-            top: -60px;
-            left: 200px;
-        }
+        /* Styling für verschachtelte Untermenüs in der Navigationsleiste */
+nav ul ul ul li {
+    /* Definiert relative Position und Positionswerte für verschachtelte Untermenüs */
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            margin-top: auto;
-        }
+        /* Styling für den Footer */
+footer {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+}
 
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Styling für den Footer-Container */
+.footer-container {
+    /* Verwendet Flexbox für die horizontale Anordnung und Ausrichtung der Footer-Elemente */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .footer-logo img {
-            width: 100px;
-        }
+        /* Styling für das Logo im Footer */
+.footer-logo img {
+    /* Setzt maximale Breite für das Logo */
+    width: 100px;
+}
 
-        .footer-info {
-            flex: 1;
-            margin: 0 20px;
-        }
+        /* Styling für Informationen im Footer */
+.footer-info {
+    /* Definiert Flex-Wachstumsverhalten und Seitenabstand */
+    flex: 1;
+    margin: 0 20px;
+}
 
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
+        /* Styling für Links im Footer */
+.footer-links ul {
+    /* Entfernt Listendarstellung und Abstände */
+    list-style: none;
+    padding: 0;
+}
 
-        .footer-links li {
-            margin-bottom: 8px;
-        }
+        /* Styling für Listenelemente im Footer */
+.footer-links li {
+    /* Setzt unteren Abstand zwischen Listenelementen */
+    margin-bottom: 8px;
+}
 
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-        }
+        /* Styling für Links in Listenelementen im Footer */
+.footer-links a {
+    /* Setzt Textfarbe und entfernt Unterstreichung */
+    color: #fff;
+    text-decoration: none;
+}
 
-        .footer-copyright {
-            text-align: center;
-            margin-top: 20px;
-        }
+        /* Styling für Copyright-Text im Footer */
+.footer-copyright {
+    /* Zentriert den Text und setzt oberen Abstand */
+    text-align: center;
+    margin-top: 20px;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+        /* Styling für Bilder */
+img {
+    /* Setzt maximale Breite, automatische Höhe, abgerundete Ecken und unteren Abstand für Bilder */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
     </style>
 </head>
 <body>
@@ -167,8 +208,9 @@
         </li>
     </ul>
 </nav>
-
-
+<h2>The Hall of Fame</h2>
+<p></p>
+    <
 <footer>
   <div class="footer-container">
     <div class="footer-logo">
@@ -192,7 +234,7 @@
     </div>
   </div>
   <div class="footer-copyright">
-    <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
+    <p>&copy; By Thoams with much Vandalism</p>
   </div>
 </footer>
 

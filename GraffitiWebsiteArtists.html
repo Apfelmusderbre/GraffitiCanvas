@@ -5,155 +5,222 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanCanvasExpressions.com</title>
     <style>
-        body {
-            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-            margin: 0;
-        }
+          /* Styling für den gesamten Seiteninhalt */
+body {
+    /* Setzt die bevorzugte Schriftart für den Body */
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    /* Verwendet Flexbox für eine vertikale Anordnung des Inhalts */
+    display: flex;
+    flex-direction: column;
+    /* Definiert minimale Höhe und entfernt den Seitenrand */
+    min-height: 100vh;
+    margin: 0;
+}
 
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-        }
+          /* Styling für die Navigationsleiste */
+nav {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* Verwendet Flexbox für die horizontale Anordnung der Navigationsleisteninhalte */
+    display: flex;
+    align-items: center;
+}
 
-        nav img {
-            max-height: 40px;
-            margin-right: 10px;
-        }
+          /* Styling für das Logo in der Navigationsleiste */
+nav img {
+    /* Setzt maximale Höhe und rechten Seitenabstand für das Logo */
+    max-height: 40px;
+    margin-right: 10px;
+}
 
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
+         /* Styling für die Listen in der Navigationsleiste */
+nav ul {
+    /* Entfernt Listendarstellung, Abstände und verwendet Flexbox */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
 
-        nav ul li {
-            margin-right: 20px;
-            position: relative;
-        }
+         /* Styling für Listenelemente in der Navigationsleiste */
+nav ul li {
+    /* Setzt rechten Abstand und definiert relative Position */
+    margin-right: 20px;
+    position: relative;
+}
 
-        nav ul li a {
-            text-decoration: none;
-            color: #fff;
-            padding: 10px;
-            display: block;
-        }
+         /* Styling für Links in der Navigationsleiste */
+nav ul li a {
+    /* Entfernt Unterstreichung, setzt Textfarbe, Padding und Blockdarstellung */
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
 
-        nav ul li:hover {
-            background-color: #555;
-        }
+        /* Hover-Effekt für Listenelemente in der Navigationsleiste */
+nav ul li:hover {
+    background-color: #555;
+}
 
-        nav ul ul {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background-color: #333;
-            border-radius: 0 0 4px 4px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
-        }
+        /* Styling für Untermenüs in der Navigationsleiste */
+nav ul ul {
+    /* Verbirgt Untermenüs, setzt absolute Position, Hintergrundfarbe und Schatten */
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
 
-        nav ul li:hover > ul {
-            display: inherit;
-        }
+        /* Zeigt Untermenüs bei Hover an */
+nav ul li:hover > ul {
+    display: inherit;
+}
 
-        nav ul ul li {
-            width: 200px;
-            float: none;
-            display: list-item;
-            position: relative;
-        }
+        /* Styling für Untermenü-Listenelemente in der Navigationsleiste */
+nav ul ul li {
+    /* Setzt Breite, hebt Float auf, definiert relative Position */
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
 
-        nav ul ul ul li {
-            position: relative;
-            top: -60px;
-            left: 200px;
-        }
+        /* Styling für verschachtelte Untermenüs in der Navigationsleiste */
+nav ul ul ul li {
+    /* Definiert relative Position und Positionswerte für verschachtelte Untermenüs */
+    position: relative;
+    top: -60px;
+    left: 200px;
+}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px 0;
-            margin-top: auto;
-        }
+ .notice-box {
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: justify;
+        }       
+        
+        /* Styling für den Footer */
+footer {
+    /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: auto;
+}
 
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+        /* Styling für den Footer-Container */
+.footer-container {
+    /* Verwendet Flexbox für die horizontale Anordnung und Ausrichtung der Footer-Elemente */
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
 
-        .footer-logo img {
-            width: 100px;
-        }
+        /* Styling für das Logo im Footer */
+.footer-logo img {
+    /* Setzt maximale Breite für das Logo */
+    width: 100px;
+}
 
-        .footer-info {
-            flex: 1;
-            margin: 0 20px;
-        }
+        /* Styling für Informationen im Footer */
+.footer-info {
+    /* Definiert Flex-Wachstumsverhalten und Seitenabstand */
+    flex: 1;
+    margin: 0 20px;
+}
 
-        .social-icons {
-            list-style: none;
-            padding: 0;
-            display: flex;
-        }
+        /* Styling für soziale Icons im Footer */
+.social-icons {
+    /* Entfernt Listendarstellung und Abstände, verwendet Flexbox */
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
 
-        .social-icons li {
-            margin-right: 10px;
-        }
+        /* Styling für einzelne soziale Icons im Footer */
+.social-icons li {
+    /* Setzt rechten Abstand zwischen sozialen Icons */
+    margin-right: 10px;
+}
 
-        .social-icons a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 20px;
-        }
+        /* Styling für Links in sozialen Icons im Footer */
+.social-icons a {
+    /* Setzt Textfarbe, entfernt Unterstreichung und definiert Schriftgröße */
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
 
-        .footer-links ul {
-            list-style: none;
-            padding: 0;
-        }
+        /* Styling für Links im Footer */
+.footer-links ul {
+    /* Entfernt Listendarstellung und Abstände */
+    list-style: none;
+    padding: 0;
+}
 
-        .footer-links li {
-            margin-bottom: 8px;
-        }
+        /* Styling für Listenelemente im Footer */
+.footer-links li {
+    /* Setzt unteren Abstand zwischen Listenelementen */
+    margin-bottom: 8px;
+}
 
-        .footer-links a {
-            color: #fff;
-            text-decoration: none;
-        }
+        /* Styling für Links in Listenelementen im Footer */
+.footer-links a {
+    /* Setzt Textfarbe und entfernt Unterstreichung */
+    color: #fff;
+    text-decoration: none;
+}
 
-        .footer-copyright {
-            text-align: center;
-            margin-top: 20px;
-        }
+        /* Styling für Copyright-Text im Footer */
+.footer-copyright {
+    /* Zentriert den Text und setzt oberen Abstand */
+    text-align: center;
+    margin-top: 20px;
+}
 
-        section {
-            height: 90px;
-            display: flex;
-            margin-bottom: 20px;
-        }
+        /* Styling für Abschnitte */
+section {
+    /* Setzt die Höhe der Abschnitte und verwendet Flexbox für die horizontale Anordnung */
+    height: 90px;
+    display:contents;
+    margin-bottom: 20px;
+}
 
-        hr {
-            border: 1px solid #dde;
-            margin: 20px 0;
-        }
+        /* Styling für Trennlinien */
+hr {
+    /* Setzt das Styling für horizontale Linien als Trennlinien zwischen Abschnitten */
+    border: 1px solid #dde;
+    margin: 20px 0;
+}
 
-        h2 {
-            margin-bottom: 2px;
-        }
+        /* Styling für Überschriften */
+h2 {
+    /* Setzt den unteren Abstand für Überschriften */
+    margin-bottom: 2px;
+}
 
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin-bottom: 10px;
-        }
+        /* Styling für Bilder */
+img {
+    /* Setzt maximale Breite, automatische Höhe, abgerundete Ecken und unteren Abstand für Bilder */
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+        
+         /* Styling für Bilder mit "half-size" class */
+.half-size {
+  width: 50%;
+}            
     </style>
 </head>
 <body>
@@ -179,7 +246,9 @@
                 <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
             </ul>
         </li>
-        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
+        <li>
+            <a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a>
+        </li>
         <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
         <li>
             <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
@@ -191,7 +260,8 @@
     </ul>
 </nav>
 
-<h1>Legal Artists:</h1>
+<section id="section1"><h2>Legal Artists:</h2>
+
 <p>
     Legal artists are individuals who create graffiti or street art with the permission of property owners or relevant authorities.
     Their work is sanctioned and aligns with local regulations, fostering a positive relationship between artists and the community.
@@ -200,7 +270,7 @@
 
 <h2>Blade (Steven Ogburn)</h2>
 <p>Blade is a legendary graffiti artist known for his involvement in the New York City graffiti scene during the 1970s and 1980s. He is recognized for his mastery of traditional graffiti styles and vibrant colors.</p>
-<img src="https://d16kd6gzalkogb.cloudfront.net/artist_images/Blade-profile.jpg" alt="Blade Image">
+<img src="https://d16kd6gzalkogb.cloudfront.net/artist_images/Blade-profile.jpg" alt="Blade Image" class="half-size">
 
 <h2>Futura 2000 (Leonard Hilton McGurr)</h2>
 <p>Futura 2000 is an American graffiti artist who emerged in the early 1970s. He is known for his abstract, futuristic style that has influenced both graffiti and contemporary art. Futura 2000 has successfully transitioned from the streets to galleries.</p>
@@ -222,16 +292,39 @@
 
 <h2>POSE (Jordan Nickel)</h2>
 <p>Pose is a contemporary artist known for his transition from illegal graffiti to legal mural work. His letter-based style often includes bold colors and dynamic compositions.</p>
-
+    </section>
 <hr>
 
-<section id="section2">
-    <h2>Illegal Artists:</h2>
+<section id="section2"><h2>Illegal Artists:</h2>
+    
     <p>
         Illegal artists, also known as taggers or vandals, engage in graffiti without proper authorization or consent.
         Their activities may violate local laws and regulations, leading to legal consequences.
         While some illegal artists may express themselves as a form of protest or rebellion, their actions can contribute to negative perceptions of graffiti as a whole.
     </p>
+    <div class="notice-box">
+    <p> <h1>Notice: Graffiti Artist Information Policy</h1>
+
+    <p>
+        As a responsible and law-abiding community, we do not endorse or provide information about illegal graffiti artists. Our platform is committed to promoting legal and ethical forms of artistic expression.
+    </p>
+
+    <p>
+        However, we encourage discussion and documentation of renowned street artists, legal mural projects, and street art festivals. If you are a member of our community and have information about legal graffiti artists, feel free to contribute to our collaborative effort. Members with certain ranks are allowed to edit and add information about recognized and respected artists within the boundaries of legality and ethical practices.
+    </p>
+
+    <p>
+        Let's celebrate the positive impact of urban art within legal and constructive contexts.
+        Thank you for your understanding and cooperation.
+    <div class="container">
+  <div>
+    <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html"><button class="log">Login</button></a>
+    <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup"><button class="reg">Sign up</button></a>
+  </div>
+</div>
+    </div>
+
+    
 </section>
 
 <hr>
@@ -243,21 +336,62 @@
         Street art often transcends traditional graffiti, incorporating various styles and mediums such as stencils, murals, and installations.
         Street art is a dynamic and evolving form of artistic expression that can convey social, political, or cultural messages.
     </p>
+        <h2>Aiko Nakagawa (Lady Aiko)</h2>
+    <p>A Japanese street artist based in New York, Lady Aiko combines traditional Japanese imagery with contemporary pop art, creating vibrant and dynamic pieces often featuring strong female figures.</p>
+
+    <h2>Banksy</h2>
+    <p>Perhaps the most famous street artist globally, Banksy's identity remains a mystery. His politically charged and thought-provoking stencils often carry a satirical message.</p>
+
+    <h2>Blu</h2>
+    <p>An Italian street artist recognized for his large-scale murals that often feature surreal and thought-provoking imagery. Blu's work can be both whimsical and deeply contemplative.</p>
+
+    <h2>D*Face (Dean Stockton)</h2>
+    <p>A British street artist known for his pop-art-inspired work. D*Face often incorporates bold colors and comic book aesthetics to explore themes of celebrity, consumerism, and mortality.</p>
+
+    <h2>Faith47 (Graffiti name)</h2>
+    <p>A South African street artist whose work often delves into social issues, spirituality, and the environment. Faith47's murals are known for their emotional depth and poetic qualities.</p>
+
+    <h2>Invader</h2>
+    <p>A French street artist who gained fame for his pixelated mosaic art inspired by 8-bit video games. Invader's work can be found in cities worldwide, and he gives points to those who document and photograph his installations.</p>
+
+    <h2>JR</h2>
+    <p>A French artist known for his large-scale photographic murals that often tackle social and political issues. His "Inside Out" project encourages people to share their portraits and stories.</p>
+
+    <h2>Os Gemeos</h2>
+    <p>Brazilian twin brothers Otavio and Gustavo Pandolfo are known for their vibrant and surreal characters. Their work often reflects Brazilian culture and folklore, combining graffiti with street art.</p>
+
+    <h2>ROA</h2>
+    <p>A Belgian street artist celebrated for his large-scale murals featuring detailed and often monochromatic depictions of animals. His work can be found on buildings in cities across the globe.</p>
+
+    <h2>Shepard Fairey</h2>
+    <p>Known for the iconic "Hope" poster during Barack Obama's 2008 presidential campaign, Fairey's work often combines street art with activism, featuring bold graphics and social commentary.</p>
+
+    <h2>Swoon (Caledonia Dance Curry)</h2>
+    <p>An American street artist whose intricate paper cutouts and wheatpaste prints often depict human figures. Swoon's work often explores themes of community and empathy.</p>
+
+    <h2>Vhils (Alexandre Farto)</h2>
+    <p>Hailing from Portugal, Vhils is recognized for his unique technique of carving and chiseling into urban surfaces like walls and billboards to create textured and expressive portraits.</p>
+
 </section>
 
 <hr>
 
 <section id="section4">
+   <p>Whether you're a Legal Artist, an enthusiast of underground expressions, or a Street Art connoisseur, we invite you to be part of our dynamic artist community. Embrace the diversity of urban art and join us in celebrating the boundless creativity that transforms the ordinary into the extraordinary.</p>
     Connect with other Artists
     <!-- sing Up/Log In-->
-    <div class="signup-login-message">
-        <p>To be part of our community please<a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html">Log In</a> or <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup">Sign Up</a>.</p>
-    </div>
+<div class="container">
+  <div>
+    <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html"><button class="log">Login</button></a>
+    <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup"><button class="reg">Sign up</button></a>
+  </div>
+</div>
+
 </section>
 
 <hr>
 
-<p>Whether you're a Legal Artist, an enthusiast of underground expressions, or a Street Art connoisseur, we invite you to be part of our dynamic artist community. Embrace the diversity of urban art and join us in celebrating the boundless creativity that transforms the ordinary into the extraordinary.</p>
+
 
 <footer>
     <div class="footer-container">
@@ -285,7 +419,7 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <p>&copy; 2023 Your Graffiti Website. All rights reserved.</p>
+        <p>&copy; By Thoams with much Vandalism</p>
     </div>
 </footer>
 
