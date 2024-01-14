@@ -24,7 +24,7 @@ nav {
     /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
     background-color: #333;
     color: #fff;
-    padding: 10px;
+    padding: 5px;
     /* Verwendet Flexbox für die horizontale Anordnung der Navigationsleisteninhalte */
     display: flex;
     align-items: center;
@@ -106,7 +106,7 @@ footer {
     /* Hintergrundfarbe, Textfarbe und Abständeigenschaften */
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 15px ;
     margin-top: auto;
 }
 
@@ -164,46 +164,65 @@ img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
-    margin-bottom: 10px;
 }
+ 
+.fake-mail{
+     text-decoration-line: underline;
+     color:cornflowerblue;   
+        }
+        
+  a {
+            text-decoration: none;
+}
+
+a:hover {
+            text-decoration: none;
+}         
     </style>
-</head>
+
 <body>
 
-
-
-
 <nav>
-    <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Logo">
+    <!-- Navigationsmenu mit dropdown section bei Artist, Tips and Tricks und Sing up Log in -->
+
+    <!-- Logo-Bereich -->
+    <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA="
+        alt="Logo">
+
+    <!-- Hauptnavigation -->
     <ul>
-        <li><a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-        <li><a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
+        <li><a href="GraffitiWebsiteHome.html">Home</a></li>
+        <li><a href="GraffitiWebsiteGallery.html">Gallery</a></li>
         <li>
-            <a href="file:///H:/Code/GraffitiWebsiteArtists.html" class="cool-button">Artists</a>
-            <ul><li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section1">Legal</a></li>
-                    <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section2">Non Legal</a></li>
-                    <li>
-                        <a href="file:///H:/Code/GraffitiWebsiteArtists.html#section3">Streetart</a>
-                <li><a href="file:///H:/Code/GraffitiWebsiteArtists.html#section4">Connect with others</a>
-                </li>
+            <!-- Artists-Untermenü -->
+            <a href="GraffitiWebsiteArtists.html">Artists</a>
+            <ul>
+                <li><a href="GraffitiWebsiteArtists.html#section1">Legal</a></li>
+                <li><a href="GraffitiWebsiteArtists.html#section2">Illegal</a></li>
+                <li><a href="GraffitiWebsiteArtists.html#section3">Streetart</a></li>
+                <li><a href="GraffitiWebsiteArtists.html#section4">Connect with others</a></li>
+            </ul>
+        </li>
+        <li><a href="GraffitiWebsiteTipsAndTricks.html">Tips and Tricks</a>
+            <!-- Tips and Tricks Untermenü -->
+            <ul>
+                <li><a href="GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
+                <li><a href="GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
+                <li><a href="GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
             </ul>
         </li>
         <li>
-            <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html" class="cool-button">Tips and Tricks</a>
-            <ul>
-                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section1">TAG</a></li>
-                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section2">ALPHABET</a></li>
-                <li><a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html#section3">CANS</a></li>
-            </ul>
+            <a href="GraffitiWebsiteCommunity.html">Community</a>
         </li>
-        <li><a href="file:///H:/Code/GraffitiWebsiteCommunity.html" class="cool-button">Community</a></li>
-        <li><a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
         <li>
-            
-            <a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html" class="cool-button">Log In / Sign Up</a>
+            <a href="GraffitiWebsiteContact.html">Contact</a>
+        </li>
+        <li class="loginsingup">
+            <!-- Log In / Sign Up Untermenü -->
+            <a href="GraffitiWebsiteSingInLogIn.html">Log In / Sign Up</a>
             <ul>
-                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html">Log In</a></li>
-                <li><a href="file:///H:/Code/GraffitiWebsiteSingInLogIn.html#signup">Sign Up</a></li>
+                <li><a href="GraffitiWebsiteSingInLogIn.html">Log In</a></li>
+                <li><a href="GraffitiWebsiteSingInLogIn.html#signup">Sign Up</a></li>
             </ul>
         </li>
     </ul>
@@ -221,7 +240,7 @@ img {
     <p>Whether you have questions, feedback, or exciting collaboration ideas, we're here to listen. Our dedicated team is passionate about graffiti art and committed to fostering a vibrant artistic community.</p>
 
     <h3>Get in Touch</h3>
-    <p>Feel free to drop us a message using the form below. Alternatively, you can reach us directly via email at <strong>Einfach mal so tun als wäre hier eine Email</strong>.</p>
+    <p>Feel free to drop us a message using the form below. Alternatively, you can reach us directly via email at <strong class="fake-mail">Einfach-mal-so-tun-als-wäre-hier-eine@Email.com</strong>.</p>
 
     <h3>Connect with Our Team</h3>
     <p>Meet the faces behind Urban Canvas Expressions:</p>
@@ -240,36 +259,41 @@ img {
     </form>
 </div>
 
- <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiRstbzmLKDAxVMhv0HHQRFAc4QFnoECBcQAQ&url=https%3A%2F%2Fnotes-box.com%2Fupload%2Fiblock%2F207%2Fx8740myvfd9gqjgm2hfcjj9l733m93w9%2FRick-Astley-Never-Gonna-Give-You-Up.pdf&usg=AOvVaw04HTDrPZpOBD22kW8hkqHi&opi=89978449" download="meine-datei.pdf">Downlod Pdf For Terms of condition</a>
+ <a href="DatenschutzU.Nutzungsbedingung.pdf">Datenschutz und Nutzungsbedingung</a>
 
-
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-logo">
-      <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA=" alt="Your Logo">
+    <footer>
+    <!Footer-Bereich >
+    <div class="footer-container">
+        <!Container für Footer-Elemente >
+        <div class="footer-logo">
+            <!-- Logo-Bereich im Footer -->
+            <img src="https://media.istockphoto.com/id/1473678881/de/foto/abstraktes-graffiti-street-art-kunstwerk.jpg?s=612x612&w=0&k=20&c=x7DPMfFBiSUCCZCe-btx0ZYGpG9haejo-XVRO6-RIiA="
+                alt="Your Logo">
+        </div>
+        <div class="footer-info">
+            <! Bereich für allgemeine Informationen im Footer >
+            <p>Explore the vibrant world of graffiti art.</p>
+            <p>Connect with us:</p>
+            <a href="GraffitiWebsiteContact.html">Urban expression</a>
+        </div>
+        <div class="footer-links">
+            <! Bereich für Footer-Links >
+            <ul>
+                <li><a href="GraffitiWebsiteHome.html">Home</a></li>
+                <li><a href="GraffitiWebsiteGallery.html">Gallery</a></li>
+                <li><a href="GraffitiWebsiteArtists.html">Artists</a></li>
+                <li><a href="GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
+                <li><a href="GraffitiWebsiteCommunity.html">Community</a></li>
+                <li><a href="GraffitiWebsiteContact.html">Contact</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="footer-info">
-      <p>Explore the vibrant world of graffiti art.</p>
-      <p>Connect with us:</p>
-     
+    <div class="footer-copyright">
+        <! Bereich für das Copyright im Footer >
+        <p>&copy; By Thomas with much Vandalism</p>
     </div>
-    <div class="footer-links">
-      <ul>
-            
-              <li> <a href="file:///H:/Code/GraffitiWebsiteHome.html" class="cool-button">Home</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteGallery.html">Gallery</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteArtists.html">Artists</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteTipsAndTricks.html">Tricks</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteCommunity.html">Community</a></li>
-        <li> <a href="file:///H:/Code/GraffitiWebsiteContact.html" class="cool-button">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <p>&copy; By Thoams with much Vandalism</p>
-  </div>
 </footer>
+
 
 
 
